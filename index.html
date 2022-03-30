@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proffesional Trainng HTML Theme/Template</title>
+    <!-- style sheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+    <!-- Font -->
+    <!-- Icon -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+    <!-- Icon -->
+</head>
+
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="assets/img/logo.png" alt="" srcset=""></a>
+            <div class="nav-url" id="toggleNav">
+                <i class="fa fa-times" onclick="hideNav()"></i>
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">COURSE</a></li>
+                    <li><a href="#">BLOG</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showNav()"></i>
+        </nav>
+        <div class="hero-box">
+            <h1>Wellcome TO World Biggest University</h1>
+            <p>Udemy is an online learning and teaching marketplace with over 183000 courses and 40 million students.
+                <br>Learn programming, marketing, data science and more.
+            </p>
+            <button><a href="http://about.html">Know More</a></button>
+        </div>
+    </section>
+    <!-- Courses Section -->
+
+    <section class="courses">
+        <h1>Courses We Offer</h1>
+        <p>Learn Something Good & Do Something Better</p>
+
+        <div class="row">
+            <div class="course-column">
+                <i><img src="assets/icons/webdesign.png" alt="" srcset=""></i>
+                <h3>Web Design</h3>
+                <p>In order to provide the best possible experience to old and buggy browsers, Font Awesome uses CSS
+                    browser hacks in several places to target special CSS to certain browser versions in order to work
+                    around bugs in the browsers themselves. These hacks understandably cause CSS validators to complain
+                    that they are invalid.
+                </p>
+            </div>
+            <div class="course-column">
+                <i><img src="assets/icons/web-development.png" alt="" srcset=""></i>
+                <h3>Web Development</h3>
+                <p>In order to provide the best possible experience to old and buggy browsers, Font Awesome uses CSS
+                    browser hacks in several places to target special CSS to certain browser versions in order to work
+                    around bugs in the browsers themselves. These hacks understandably cause CSS validators to complain
+                    that they are invalid.
+                </p>
+            </div>
+            <div class="course-column">
+                <i><img src="assets/icons/wordpress.png" alt="" srcset=""></i>
+                <h3>WordPress</h3>
+                <p>In order to provide the best possible experience to old and buggy browsers, Font Awesome uses CSS
+                    browser hacks in several places to target special CSS to certain browser versions in order to work
+                    around bugs in the browsers themselves. These hacks understandably cause CSS validators to complain
+                    that they are invalid.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!----- OUR Campus----->
+    <section class="campus">
+        <h1>Our Campus</h1>
+        <p>In order to provide the best possible experience</p>
+        <div class="row">
+            <div class="campus-column">
+                <img src="assets/img/washington.png" alt="">
+                <div class="campus-layer">
+                    <h3>Mirpur 2</h3>
+                </div>
+            </div>
+            <div class="campus-column">
+                <img src="assets/img/london.png" alt="">
+                <div class="campus-layer">
+                    <h3>Dhanmondi</h3>
+                </div>
+            </div>
+            <div class="campus-column">
+                <img src="assets/img/newyork.png" alt="">
+                <div class="campus-layer">
+                    <h3>Shoni-Akhra</h3>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Facilities -->
+    <section class="facilities">
+        <h1>Our Facilities</h1>
+        <p>In order to provide the best possible experience</p>
+        <div class="row">
+            <div class="facilities-column">
+                <img src="assets/img/computerlab.png" alt="">
+                <h3>World Class Lab</h3>
+                <p>
+                    In order to provide the best possible experience to old and buggy browsers, Font Awesome uses CSS
+                    browser hacks in several places to target special CSS to certain browser versions in order to work
+                </p>
+            </div>
+            <div class="facilities-column">
+                <img src="assets/img/basketball.png" alt="">
+                <h3>Best Teachers</h3>
+                <p>
+                    In order to provide the best possible experience to old and buggy browsers, Font Awesome uses CSS
+                    browser hacks in several places to target special CSS to certain browser versions in order to work
+                </p>
+            </div>
+            <div class="facilities-column">
+                <img src="assets/img/cafeteria.png" alt="">
+                <h3>Cafeteria</h3>
+                <p>
+                    In order to provide the best possible experience to old and buggy browsers, Font Awesome uses CSS
+                    browser hacks in several places to target special CSS to certain browser versions in order to work
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!--Scripts of Toggle Menu -->
+    <script>
+        var navUrl = document.getElementById("toggleNav");
+
+        function showNav() {
+            navUrl.style.right = "0";
+        }
+        function hideNav() {
+            navUrl.style.right = "-200px";
+        }
+
+    </script>
+
+
+</body>
+
+</html>
