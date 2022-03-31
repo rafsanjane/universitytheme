@@ -13,6 +13,8 @@
     background-position: center;
     background-size: cover;
     position: relative;
+
+    padding-bottom: 70px;
 }
 
 nav{
@@ -151,7 +153,8 @@ nav .fa {
     width: 80%;
     margin: auto;
     text-align: center;
-    padding-top: 120px;
+    padding-top: 70px;
+    padding-bottom: 70px;
 
 }
 
@@ -208,10 +211,10 @@ nav .fa {
     content: '';
     position: absolute;
     background: #f44336;
-    width: 416px;
+    width: 425px;
     height: 80px;
-    bottom: 35px;
-    left: 1035px;
+    bottom: 6%;
+    right: -3%;
     margin-left: -208px;
     z-index: -1;
     
@@ -244,6 +247,10 @@ nav .fa {
     .row{
         flex-direction: column;
     }
+    .course-column :last-child::after{
+            display: none;
+        }
+    
 }
 
 /* ---------- campus ------------*/
@@ -252,7 +259,8 @@ nav .fa {
     width: 80%;
     margin: auto;
     text-align: center;
-    padding-top: 120px;
+    padding-top: 70px;
+    padding-bottom: 70px;
 }
 
 .campus h1{
@@ -283,6 +291,17 @@ nav .fa {
      font-weight: 300;
      line-height: 1.5em;
      padding: 10px;
+}
+
+.pr__vr__section {
+    position: relative;
+    margin: -30px auto;
+    border: 0;
+    border-left: 2px solid;
+    border-color: #E9204F;
+    width: 2px;
+    height: 60px;
+    z-index: -10;
 }
 
 .campus-column {
@@ -347,7 +366,8 @@ nav .fa {
     width: 80%;
     margin: auto;
     text-align: center;
-    padding-top: 120px;
+    padding-top: 70px;
+    padding-bottom: 70px;
 }
 
 .facilities h1{
@@ -418,13 +438,23 @@ nav .fa {
 
 
 
+@media screen and (max-width:700px) {
+
+    .facilities-column:nth-child(2)::before{
+        display: none !important;
+    }
+
+}
+
+
 /* ---------- Testimonial ------------*/
 
 .testimonial{
     width: 80%;
     margin: auto;
     text-align: center;
-    padding-top: 120px;
+    padding-top: 70px;
+    padding-bottom: 70px;
 }
 
 
@@ -493,3 +523,197 @@ nav .fa {
 }
 
 
+@media screen and (max-width:700px) {
+    .testimonial-column img{
+        margin-right: 15px;
+        margin-left: 0px;
+
+    }
+}
+
+
+
+/* -------- CAll to Action ---------*/
+
+.call-action{
+    margin: 100px auto;
+    width:80%;
+    background-image: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)), url(../img/online.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 100px 0;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 2em;
+
+}
+
+
+
+.call-action h1{
+    font-size: 36px;
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+.call-action h1::before{
+    content: 'Enroll in Our Online Courses from Anywhere Anytime';
+    background: #fff3f32d;
+    padding: 10px;
+    
+}
+
+
+.call-action a{
+    color: #fff;
+    padding: 16px 32px;
+    border: 1px solid #fff;
+    font-weight: 500;
+    transition: 1s;
+
+}
+.call-action a:hover{
+    background-color: #E9204F;
+    padding: 16px 32px;
+    border: 1px solid #E9204F;
+}
+
+
+@media screen and (max-width:700px) {
+    .call-action h1 {
+        font-size: 22px;
+        line-height: 2em;
+    }
+
+}
+
+
+
+
+
+
+
+/*--------- Footer-------*/
+
+.footer{
+     width: 100%;
+
+     background: #161616;
+}
+
+.footer .row{
+    width: 80%;
+    margin: auto;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.footer-column{
+    flex-basis: 33%;
+    text-align: center;
+
+}
+
+
+.footer-column h4{
+
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    font-weight: 600;
+    
+}
+
+
+.social{
+
+    display: -webkit-box;
+
+    display: flex;
+    margin: 0px 80px;
+    
+}
+
+.social a {
+    box-sizing: unset;
+    display: flex;
+    width: 48px;
+    height: 48px;
+    font-size: 24px;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #E9204F;
+    border-radius: 50%;
+    transition: 700ms cubic-bezier(0.17, 0.67, 0, 1.01);
+    
+}
+
+.social * + a {
+    margin-left: 0.5rem;
+}
+
+
+
+.social a:hover {
+    transform: translateY(-5px);
+    color: #E9204F;
+}
+
+
+.footer-column h4, .social a, .footer-column p,.footer-column a{
+    color: #ffffff;
+}
+
+.footer-column p{
+    word-wrap: break-word;
+}
+
+
+
+
+@media screen and (max-width:700px) {
+    .social {
+        margin: 0px 145px;
+        
+    }
+
+}
+
+
+
+/*--------- Copy Right section-------*/
+
+
+.copyright{
+    width: 100%;
+    text-align: center;
+    background: #000;
+}
+
+.copyright .row{
+   width: 80%;
+   margin: auto;
+   padding-top: 20px;
+   padding-bottom: 20px;
+   display: flex;
+}
+
+.copyright a, .copyright-column p,.copyright-column a{
+    color: #ffffff;
+}
+
+.copyright-inner p{
+    color: #919191;
+    font-size: 14px;
+    margin: 0;
+}
+.inner > a{
+    margin-left: 1rem;
+}
+
+@media screen and (max-width:700px) {
+    .copyright-inner{
+        padding-bottom: 10px;
+    }
+}
