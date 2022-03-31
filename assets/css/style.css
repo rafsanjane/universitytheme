@@ -70,7 +70,7 @@ nav img{
 }
 
 .hero-box h1{
-    font-size: 62px;
+    font-size: 48px;
 }
 .hero-box p{
     margin: 10px 0 40px;
@@ -84,24 +84,24 @@ button{
     border: 1px solid white;
     background: transparent;
     
+    
  }
 
 .hero-box  a{
-    padding: 16px 28px;
-    font-size: 18px;
+    padding: 16px 34px;
+    font-size: 16px;
     font-weight: 400;
     display: inline-block;
     color: white;
-    transition: .7s ease-out;
+    transition: 1s ease-in-out;
     position: relative;
     cursor: pointer;
 }
 
 .hero-box button:hover, 
-.hero-box button:hover a{
+.hero-box a:hover {
     color: white;
-    background-color: #f44336;
-    font-weight: 600;
+    background: #f44336;
     border: 1px solid #f44336;
     
     
@@ -159,6 +159,21 @@ nav .fa {
     font-size: 36px;
     font-weight: 600;
     line-height: 1em;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.courses h1::after{
+    content: '';
+    position: absolute;
+    background: #f44336;
+    width: 160px;
+    height: 3px;
+    bottom: 0%;
+    left: 50%;
+    
+    margin-left: -80px;
+    
 }
 
 .courses p{
@@ -188,16 +203,17 @@ nav .fa {
 
 }
 
-.courses.row :last-child::after{
+
+.course-column :last-child::after{
     content: '';
     position: absolute;
     background: #f44336;
-    width: 160px;
-    height: 50px;
-    bottom: 0%;
-    left: 50%;
-    margin-left: -80px;
-    z-index: 5;
+    width: 416px;
+    height: 80px;
+    bottom: 35px;
+    left: 1035px;
+    margin-left: -208px;
+    z-index: -1;
     
 }
 
@@ -243,6 +259,22 @@ nav .fa {
     font-size: 36px;
     font-weight: 600;
     line-height: 1em;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+
+.campus h1::after{
+    content: '';
+    position: absolute;
+    background: #f44336;
+    width: 160px;
+    height: 3px;
+    bottom: 0%;
+    left: 50%;
+    
+    margin-left: -80px;
+    
 }
 
 .campus p{
@@ -253,13 +285,16 @@ nav .fa {
      padding: 10px;
 }
 
-.campus-column{
+.campus-column {
     flex-basis: 32%;
     border-radius: 15px;
     margin-bottom: 30px;
-    position: relative;
     overflow: hidden;
+    position: relative;
 }
+
+
+
 
 .campus-column img{
     width: 100%;
@@ -349,7 +384,20 @@ nav .fa {
     flex-basis: 32%;
     border-radius: 15px;
     margin-bottom: 5%;
+    position: relative;
+}
 
+.facilities-column:nth-child(2)::before{
+    content: '';
+    position: absolute;
+    background: #f44336;
+    width: 476px;
+    height: 80px;
+    top: 5%;
+    left: -27%;
+    margin-left: 80px;
+    z-index: -1;
+    
 }
 
 .facilities-column img{
@@ -369,5 +417,79 @@ nav .fa {
 }
 
 
+
+/* ---------- Testimonial ------------*/
+
+.testimonial{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 120px;
+}
+
+
+.testimonial h1{
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 1em;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+
+.testimonial h1::after{
+    content: '';
+    position: absolute;
+    background: #f44336;
+    width: 160px;
+    height: 3px;
+    bottom: 0%;
+    left: 50%;
+    
+    margin-left: -80px;
+    
+}
+
+.testimonial p{
+     color: rgb(141, 141, 141);
+     font-size: 16px;
+     font-weight: 300;
+     line-height: 1.5em;
+     padding: 10px;
+}
+
+
+.testimonial-column{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    background: #fff3f3;
+    padding: 25px;
+    cursor: pointer;
+    display: flex;
+}
+
+.testimonial-column img{
+
+    height: 50px;
+    margin-right: 30px;
+    margin-left: 5px;
+    border-radius: 50%;
+}
+
+.testimonial-column p{
+    padding: 0;
+}
+
+.testimonial-column h3{
+    margin-top: 15px;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.testimonial-column .fas, .far{
+    color: #f44336;
+}
 
 
